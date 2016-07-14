@@ -7,7 +7,7 @@ if ((!isset($_POST['pesel'])) || (!isset($_POST['haslo'])))
 		header('Location: index.php');
 		exit();
 	}
-require_once "connect.php";
+require_once "config.php";
 
 $polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
 
